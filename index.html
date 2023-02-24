@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Digital Clock with Alarm</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="clock">
+      <span id="hours">00</span>:
+      <span id="minutes">00</span>:
+      <span id="seconds">00</span>
+    </div>
+    <div class="alarm">
+      <h2>Set Alarm:</h2><div id="alarm-status"></div>
+      <div class="alarm-controls">
+        <div class="control">
+          <button id="hour-up">+</button>
+          <span id="alarm-hours">00</span>
+          <button id="hour-down">-</button>
+        </div>
+        <div class="control">
+          <button id="minute-up">+</button>
+          <span id="alarm-minutes">00</span>
+          <button id="minute-down">-</button>
+        </div>
+        <div class="control">
+          <button id="set-alarm">Set Alarm</button>
+          <button id="clear-alarm">Clear Alarm</button>
+        </div>
+      </div>
+    </div>
+    <audio id="alarm-sound" src="electronic.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
